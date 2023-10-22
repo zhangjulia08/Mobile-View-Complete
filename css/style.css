@@ -66,7 +66,8 @@ a {
 
 .current-page {
     text-decoration:underline;
-    background-color: rgb(223, 148, 0);
+    background-color: rgb(67, 0, 0);
+    border: solid 2px #ffe1e7;
 }
 
 @media screen and (min-width: 300px) {
@@ -108,19 +109,18 @@ a {
 
 }
 
-  @keyframes animation {
+ @keyframes nav-animation {
     from {background-color: #c44601;}
     to {background-color: rgb(162, 0, 70);}
   }
 
   .nav-animation,
 nav {
-    animation: animation 5s infinite;
+    animation: nav-animation 5s infinite;
     animation-direction: alternate;
     background-color: #c44601;
 }
 
   @media (prefers-reduced-motion: reduce) {
     .nav-animation {animation: none;}
-    .animation {animation: none;}
   }
